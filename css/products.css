@@ -1,0 +1,353 @@
+.page-banner {
+    padding: 60px 7% 50px;
+    text-align: center;
+    background: linear-gradient(110deg, #dff3ff 0%, #eef7ff 45%, #fff3ec 100%);
+}
+
+
+.page-banner h1 {
+    font-size: 44px;
+    color: #10145c;
+    margin: 5px 0 10px;
+}
+
+
+.page-banner p:not(.small-title) {
+    color: #555555;
+    font-size: 17px;
+}
+
+
+.shop-tools {
+    max-width: 1300px;
+    margin: auto;
+    padding: 40px 7% 10px;
+    text-align: center;
+}
+
+.search-box input {
+    width: 100%;
+    max-width: 550px;
+    padding: 14px 22px;
+
+    border: 2px solid #e2d9fb;
+    border-radius: 30px;
+    outline: none;
+
+    font-family: inherit;
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+
+.search-box input:focus {
+    border-color: #6844c8;
+    box-shadow: 0 0 0 4px #eee6ff;
+}
+
+.filter-buttons {
+    margin-top: 22px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+
+.filter-button {
+    padding: 10px 22px;
+
+    border: 2px solid #e2d9fb;
+    border-radius: 25px;
+    background-color: white;
+    color: #10145c;
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 500;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.filter-button:hover {
+    border-color: #6844c8;
+    transform: translateY(-2px);
+}
+
+
+/* the selected button */
+.filter-button.active {
+    background-color: #6844c8;
+    border-color: #6844c8;
+    color: white;
+}
+
+
+.result-count {
+    margin-top: 20px;
+    color: #666666;
+    font-size: 14px;
+}
+
+
+.shop-products {
+    padding: 20px 7% 80px;
+}
+
+
+.shop-grid {
+    max-width: 1300px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+
+.shop-grid .product-card {
+    animation: cardIn 0.5s ease;
+}
+
+
+.shop-grid .product-image {
+    position: relative;
+}
+
+
+.heart-button {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    width: 42px;
+    height: 42px;
+
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    color: #d6336c;
+
+    font-size: 22px;
+    line-height: 1;
+
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
+}
+
+
+.heart-button:hover {
+    transform: scale(1.15);
+}
+
+
+.card-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.view-button {
+    width: 100%;
+    padding: 10px 16px;
+
+    border: none;
+    border-radius: 20px;
+    background-color: #eee6ff;
+    color: #6844c8;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.view-button:hover {
+    background-color: #ddd0ff;
+}
+
+.no-results {
+    display: none;             
+    text-align: center;
+    color: #666666;
+    font-size: 18px;
+    padding: 40px 0;
+}
+
+
+.modal {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 0;
+
+    border: none;
+    border-radius: 25px;
+
+    animation: popIn 0.3s ease;
+}
+
+
+.modal::backdrop {
+    background-color: rgba(16, 20, 92, 0.45);
+}
+
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    width: 42px;
+    height: 42px;
+
+    border: none;
+    border-radius: 50%;
+    background-color: #eee6ff;
+    color: #10145c;
+
+    font-size: 26px;
+    line-height: 1;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.modal-close:hover {
+    transform: rotate(90deg);
+}
+
+
+.modal-body {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding: 40px;
+}
+
+
+.modal-image {
+    min-width: 280px;
+    height: 280px;
+
+    border-radius: 20px;
+    background-color: #eee6ff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.modal-image img {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
+
+.modal-info h2 {
+    font-size: 28px;
+    color: #10145c;
+    margin: 5px 0;
+}
+
+
+.modal-price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #6844c8;
+    margin-bottom: 12px;
+}
+
+
+#modalDescription {
+    color: #555555;
+}
+
+
+.modal-buttons {
+    margin-top: 22px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+
+.wishlist-button-big {
+    padding: 13px 26px;
+
+    border: 2px solid #d6336c;
+    border-radius: 30px;
+    background-color: white;
+    color: #d6336c;
+
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.wishlist-button-big:hover {
+    background-color: #fff0f5;
+}
+
+
+@keyframes cardIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes popIn {
+    from {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
+@media (max-width: 600px) {
+
+    .shop-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .page-banner h1 {
+        font-size: 30px;
+    }
+
+
+    .filter-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+}

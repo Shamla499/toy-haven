@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Toy Haven | Shopping Cart</title>
+
+    <meta name="description" content="View the toys in your Toy Haven shopping cart, change quantities and proceed to checkout.">
+
+    <meta name="theme-color" content="#eee6ff">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/cart.css">
+
+    <link rel="icon" href="images/logo.png">
+
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="apple-touch-icon" href="images/icons/icon-192.png">
+
+</head>
+
+
+<body>
+
+    <header class="header">
+
+        <div class="header-container">
+
+            <a href="index.html" class="logo">
+
+                <img src="images/logo.png" alt="Toy Haven Logo">
+
+            </a>
+
+
+            <nav class="navigation" id="navigation">
+
+                <a href="index.html">Home</a>
+
+                <a href="products.html">Products</a>
+
+                <a href="cart.html" class="active">
+                    Cart
+                    <span id="cartCount">0</span>
+                </a>
+
+                <a href="wishlist.html">Wishlist</a>
+
+                <a href="support.html">Support</a>
+
+            </nav>
+
+
+            <button class="menu-button" id="menuButton" type="button" aria-label="Open menu">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="page-banner">
+
+            <p class="small-title">YOUR SHOPPING BAG</p>
+
+            <h1>Shopping Cart</h1>
+
+            <p>Check your toys, change the quantity and get ready to checkout.</p>
+
+        </section>
+
+        <section class="cart-section">
+
+            <h2 class="hidden-label">Items in your cart</h2>
+
+            <div class="empty-cart" id="emptyCart">
+
+                <p class="empty-icon">🛒</p>
+
+                <h3>Your cart is empty</h3>
+
+                <p>Looks like you haven't added any toys yet.</p>
+
+                <a href="products.html" class="shop-button">Start Shopping</a>
+
+            </div>
+
+            <div class="cart-layout" id="cartLayout"> 
+
+                <div class="cart-table-box">
+
+                    <table class="cart-table">
+
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Subtotal</th>
+                                <th>Remove</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="cartItems"></tbody>
+
+                    </table>
+
+                </div>
+
+                <aside class="cart-summary">
+
+                    <h3>Cart Summary</h3>
+
+                    <div class="summary-row">
+                        <span>Items</span>
+                        <span id="totalItems">0</span>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Delivery</span>
+                        <span>Calculated at checkout</span>
+                    </div>
+
+                    <div class="summary-row summary-total">
+                        <span>Total</span>
+                        <span id="cartTotal">Rs. 0</span>
+                    </div>
+
+
+                    <a href="checkout.html" class="shop-button checkout-button">
+                        Proceed to Checkout
+                    </a>
+
+                    <button type="button" class="clear-button" id="clearCartButton">
+                        Clear Cart
+                    </button>
+
+                    <a href="products.html" class="continue-link">← Continue Shopping</a>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="newsletter">
+
+            <p class="small-title">STAY UPDATED</p>
+
+            <h2>Join Our Toy Haven Community</h2>
+
+            <p>Subscribe to receive updates about new toys, collections and special offers.</p>
+
+
+            <form id="newsletterForm" novalidate>
+
+                <label for="newsletterEmail" class="hidden-label">Email address</label>
+
+                <input type="email"
+                       id="newsletterEmail"
+                       placeholder="Enter your email address">
+
+                <button type="submit">Subscribe</button>
+
+            </form>
+
+
+            <p id="newsletterMessage"></p>
+
+        </div>
+
+
+        <div class="footer-content">
+
+            <div class="footer-section">
+
+                <div class="footer logo">
+                    <img src="images/logo.png" alt="Toy Haven Logo">
+                </div>
+
+                <p>Your playful destination for toys, collectibles and games.</p>
+
+            </div>
+
+
+            <div class="footer-section">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+
+                <a href="products.html">Products</a>
+
+                <a href="cart.html">Cart</a>
+
+                <a href="wishlist.html">Wishlist</a>
+
+                <a href="support.html">Support</a>
+
+            </div>
+
+
+            <div class="footer-section">
+
+                <h3>Contact Us</h3>
+
+                <p>Email: hello@toyhaven.com</p>
+
+                <p>Phone: +94 71 234 5678</p>
+
+                <p>Colombo, Sri Lanka</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>&copy; 2026 Toy Haven. All rights reserved.</p>
+
+        </div>
+
+    </footer>
+
+    
+    <script src="js/product-data.js"></script>   
+
+    <script src="js/script.js"></script>         
+
+    <script src="js/cart.js"></script>           
+
+</body>
+
+</html>

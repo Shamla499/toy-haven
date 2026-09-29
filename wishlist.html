@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Toy Haven | My Wishlist</title>
+
+    <meta name="description" content="Your Toy Haven wishlist and collection. Mark saved toys as Interested, Owned or Not Interested.">
+
+    <meta name="theme-color" content="#eee6ff">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/wishlist.css">
+
+    <link rel="icon" href="images/logo.png">
+
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="apple-touch-icon" href="images/icons/icon-192.png">
+
+</head>
+
+
+<body>
+
+    <header class="header">
+
+        <div class="header-container">
+
+            <a href="index.html" class="logo">
+
+                <img src="images/logo.png" alt="Toy Haven Logo">
+
+            </a>
+
+
+            <nav class="navigation" id="navigation">
+
+                <a href="index.html">Home</a>
+
+                <a href="products.html">Products</a>
+
+                <a href="cart.html">
+                    Cart
+                    <span id="cartCount">0</span>
+                </a>
+
+                <a href="wishlist.html" class="active">Wishlist</a>
+
+                <a href="support.html">Support</a>
+
+            </nav>
+
+
+            <button class="menu-button" id="menuButton" type="button" aria-label="Open menu">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="page-banner">
+
+            <p class="small-title">MY COLLECTION</p>
+
+            <h1>My Wishlist</h1>
+
+            <p>Keep track of the toys you love. Mark each one as Interested, Owned or Not Interested.</p>
+
+        </section>
+
+
+        <section class="wishlist-tools">
+
+            <h2 class="hidden-label">Filter your wishlist</h2>
+
+            <div class="status-tabs">
+
+                <button type="button" class="status-tab active" data-status="All">
+                    All <span id="countAll">0</span>
+                </button>
+
+                <button type="button" class="status-tab" data-status="Interested">
+                    ❤ Interested <span id="countInterested">0</span>
+                </button>
+
+                <button type="button" class="status-tab" data-status="Owned">
+                    ✔ Owned <span id="countOwned">0</span>
+                </button>
+
+                <button type="button" class="status-tab" data-status="Not Interested">
+                    ✖ Not Interested <span id="countNotInterested">0</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section class="wishlist-section">
+
+            <h2 class="hidden-label">Saved toys</h2>
+
+            <div class="wishlist-grid" id="wishlistGrid"></div>
+
+            <div class="empty-wishlist" id="emptyWishlist">
+
+                <p class="empty-icon">💜</p>
+
+                <h3 id="emptyTitle">Your wishlist is empty</h3>
+
+                <p id="emptyText">Tap the ♡ on any product to save it here.</p>
+
+                <a href="products.html" class="shop-button">Browse Products</a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="newsletter">
+
+            <p class="small-title">STAY UPDATED</p>
+
+            <h2>Join Our Toy Haven Community</h2>
+
+            <p>Subscribe to receive updates about new toys, collections and special offers.</p>
+
+
+            <form id="newsletterForm" novalidate>
+
+                <label for="newsletterEmail" class="hidden-label">Email address</label>
+
+                <input type="email"
+                       id="newsletterEmail"
+                       placeholder="Enter your email address">
+
+                <button type="submit">Subscribe</button>
+
+            </form>
+
+
+            <p id="newsletterMessage"></p>
+
+        </div>
+
+
+        <div class="footer-content">
+
+            <div class="footer-section">
+
+                <div class="footer logo">
+                    <img src="images/logo.png" alt="Toy Haven Logo">
+                </div>
+
+                <p>Your playful destination for toys, collectibles and games.</p>
+
+            </div>
+
+
+            <div class="footer-section">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+
+                <a href="products.html">Products</a>
+
+                <a href="cart.html">Cart</a>
+
+                <a href="wishlist.html">Wishlist</a>
+
+                <a href="support.html">Support</a>
+
+            </div>
+
+
+            <div class="footer-section">
+
+                <h3>Contact Us</h3>
+
+                <p>Email: hello@toyhaven.com</p>
+
+                <p>Phone: +94 71 234 5678</p>
+
+                <p>Colombo, Sri Lanka</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>&copy; 2026 Toy Haven. All rights reserved.</p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/product-data.js"></script>   
+
+    <script src="js/script.js"></script>        
+
+    <script src="js/wishlist.js"></script>       
+
+</body>
+
+</html>

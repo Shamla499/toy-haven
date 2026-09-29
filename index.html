@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Toy Haven | Home</title>
+
+    <meta name="description" content="Toy Haven is your playful destination for toys, collectible figurines, board games and diecast cars.">
+
+    <meta name="theme-color" content="#eee6ff">
+
+    <!-- Google Font -->
+    <link rel="preload" as="style"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap"
+      onload="this.rel='stylesheet'">
+
+<noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap">
+</noscript>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/home.css">
+
+    <link rel="icon" href="images/logo.png">
+
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="apple-touch-icon" href="images/icons/icon-192.png">
+
+</head>
+
+
+<body>
+
+    <aside class="announcement-bar" aria-label="Special offers">
+        🎉 Free island-wide delivery on orders over Rs. 5,000 &nbsp;•&nbsp; 🎁 Free gift wrapping on every order
+    </aside>
+
+
+    <header class="header">
+
+        <div class="header-container">
+
+            <a href="index.html" class="logo">
+
+                <img src="images/logo.png" alt="Toy Haven Logo" width="200" height="60">
+
+            </a>
+
+
+            <nav class="navigation" id="navigation">
+
+                <a href="index.html" class="active">Home</a>
+
+                <a href="products.html">Products</a>
+
+                <a href="cart.html">
+                    Cart
+                    <span id="cartCount">0</span>
+                </a>
+
+                <a href="wishlist.html">Wishlist</a>
+
+                <a href="support.html">Support</a>
+
+            </nav>
+
+
+            <button class="menu-button" id="menuButton" type="button" aria-label="Open menu">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <span class="blob blob-1" aria-hidden="true"></span>
+            <span class="blob blob-2" aria-hidden="true"></span>
+            <span class="floating-icon icon-1" aria-hidden="true">⭐</span>
+            <span class="floating-icon icon-2" aria-hidden="true">🎈</span>
+            <span class="floating-icon icon-3" aria-hidden="true">🎲</span>
+            <span class="floating-icon icon-4" aria-hidden="true">✨</span>
+
+
+            <div class="hero-content" id="heroContent">
+
+                <p class="hero-small-text">✨ WELCOME TO TOY HAVEN</p>
+
+                <h1 id="herotitle">Discover Your Next Favourite Toy</h1>
+
+                <p id="herodescription">
+                    Explore our exciting collection of toys, figurines, board games and diecast cars.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="products.html" class="hero-button" id="heroButton">SHOP NOW</a>
+
+                    <a href="#categories" class="hero-button-outline">Explore Categories</a>
+
+                </div>
+
+                <ul class="hero-badges">
+                    <li>🚚 Island-wide delivery</li>
+                    <li>🔒 Secure checkout</li>
+                    <li>🎁 Gift wrapping</li>
+                </ul>
+
+            </div>
+
+
+            <div class="hero-image">
+                
+                <img id="heroImage"
+                     src="images/toy banner 1.png"
+                     alt="Toy collection">
+
+                <span class="hero-sticker">NEW<br>ARRIVALS</span>
+
+            </div>
+
+            <svg class="hero-wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M0,40 C240,90 480,0 720,40 C960,80 1200,10 1440,45 L1440,90 L0,90 Z"></path>
+            </svg>
+
+        </section>
+
+
+        <section class="features">
+
+            <h2 class="hidden-label">Why shop with us</h2>
+
+            <div class="feature-card reveal">
+                <span class="feature-icon">🚚</span>
+                <div>
+                    <h3>Free Delivery</h3>
+                    <p>On orders over Rs. 5,000</p>
+                </div>
+            </div>
+
+            <div class="feature-card reveal">
+                <span class="feature-icon">🛡️</span>
+                <div>
+                    <h3>Safe &amp; Tested</h3>
+                    <p>Quality checked toys</p>
+                </div>
+            </div>
+
+            <div class="feature-card reveal">
+                <span class="feature-icon">🎁</span>
+                <div>
+                    <h3>Gift Wrapping</h3>
+                    <p>Free on every order</p>
+                </div>
+            </div>
+
+            <div class="feature-card reveal">
+                <span class="feature-icon">↩️</span>
+                <div>
+                    <h3>Easy Returns</h3>
+                    <p>Within 14 days</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="categories" id="categories">
+
+            <div class="section-heading reveal">
+
+                <p>EXPLORE OUR COLLECTION</p>
+
+                <h2>Shop By Category</h2>
+
+                <span>Find something fun for everyone</span>
+
+            </div>
+
+
+            <div class="category-container">
+
+                <a href="products.html?category=figurines" class="category-card reveal">
+                    <span class="category-emoji" aria-hidden="true">🦸‍♂️</span>
+                    <img src="images/figurines-1.jpg" alt="Figurines" loading="lazy">
+                    <h3>Figurines</h3>
+                    <p>Collect your favourite characters and heroes.</p>
+                    <span class="category-link">Explore →</span>
+                </a>
+
+                <a href="products.html?category=toys" class="category-card reveal">
+                    <span class="category-emoji" aria-hidden="true">🧸</span>
+                    <img src="images/Toys Image 1.png" alt="Toys" loading="lazy">
+                    <h3>Toys</h3>
+                    <p>Discover fun and exciting toys for every age.</p>
+                    <span class="category-link">Explore →</span>
+                </a>
+
+                <a href="products.html?category=board-games" class="category-card reveal">
+                    <span class="category-emoji" aria-hidden="true">🎲</span>
+                    <img src="images/boardgames-1.png" alt="Board games" loading="lazy">
+                    <h3>Board Games</h3>
+                    <p>Enjoy exciting games with family and friends.</p>
+                    <span class="category-link">Explore →</span>
+                </a>
+
+                <a href="products.html?category=diecast-cars" class="category-card reveal">
+                    <span class="category-emoji" aria-hidden="true">🏎️</span>
+                    <img src="images/car-1.png" alt="Diecast cars" loading="lazy">
+                    <h3>Diecast Cars</h3>
+                    <p>Discover detailed and collectible model cars.</p>
+                    <span class="category-link">Explore →</span>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <section class="featured">
+
+            <div class="section-heading reveal">
+
+                <p>OUR FAVOURITES</p>
+
+                <h2>Featured Products</h2>
+
+                <span>Take a look at some of our popular picks</span>
+
+            </div>
+
+    
+            <div class="featured-container" id="featuredContainer"></div>
+
+            <div class="view-all-container">
+
+                <a href="products.html" class="view-all-button">View All Products →</a>
+
+            </div>
+
+        </section>
+
+
+        <section class="promo">
+
+            <div class="promo-box reveal">
+
+                <div class="promo-text">
+
+                    <p class="promo-tag">🎲 GAME NIGHT SPECIAL</p>
+
+                    <h2>Bring the Whole Family Together</h2>
+
+                    <p>Strategy, mystery and classic board games for players of every age.</p>
+
+                    <a href="products.html?category=board-games" class="promo-button">Shop Board Games</a>
+
+                </div>
+
+                <img src="images/boardgame-4.png" alt="Board games and dice" class="promo-image">
+
+            </div>
+
+        </section>
+
+
+        <section class="product-of-day">
+
+            <div class="product-day-box reveal">
+
+                <div class="product-day-image">
+
+                    <span class="day-ribbon">TODAY ONLY</span>
+
+                    <img id="productOfDayImage" src="images/logo.png" alt="Product of the day">
+
+                </div>
+
+
+                <div class="product-day-content">
+
+                    <p class="small-title">⭐ SPECIAL PICK</p>
+
+                    <h2>Featured Product of the Day</h2>
+
+                    <h3 id="productOfDayName">Loading...</h3>
+
+                    <p id="productOfDayDescription">
+                        Discover today's special pick from Toy Haven.
+                    </p>
+
+                    <p class="product-day-price" id="productOfDayPrice"></p>
+
+                    <p class="countdown-label">⏰ New pick in:</p>
+
+                    <div class="countdown">
+
+                        <div class="time-box"><span id="hoursLeft">00</span><small>hours</small></div>
+                        <div class="time-box"><span id="minutesLeft">00</span><small>mins</small></div>
+                        <div class="time-box"><span id="secondsLeft">00</span><small>secs</small></div>
+
+                    </div>
+
+                    <button type="button" class="shop-button" id="productOfDayButton">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="newsletter">
+
+            <p class="small-title">STAY UPDATED</p>
+
+            <h2>Join Our Toy Haven Community</h2>
+
+            <p>Subscribe to receive updates about new toys, collections and special offers.</p>
+
+
+            <form id="newsletterForm" novalidate>
+
+                <label for="newsletterEmail" class="hidden-label">Email address</label>
+
+                <input type="email"
+                       id="newsletterEmail"
+                       placeholder="Enter your email address">
+
+                <button type="submit">Subscribe</button>
+
+            </form>
+
+
+            <p id="newsletterMessage"></p>
+
+        </div>
+
+
+        <div class="footer-content">
+
+            <div class="footer-section">
+
+                <div class="footer logo">
+                    <img src="images/logo.png" alt="Toy Haven Logo">
+                </div>
+
+                <p>Your playful destination for toys, collectibles and games.</p>
+
+            </div>
+
+
+            <div class="footer-section">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+
+                <a href="products.html">Products</a>
+
+                <a href="cart.html">Cart</a>
+
+                <a href="wishlist.html">Wishlist</a>
+
+                <a href="support.html">Support</a>
+
+            </div>
+
+
+            <div class="footer-section">
+
+                <h3>Contact Us</h3>
+
+                <p>Email: hello@toyhaven.com</p>
+
+                <p>Phone: +94 71 234 5678</p>
+
+                <p>Colombo, Sri Lanka</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>&copy; 2026 Toy Haven. All rights reserved.</p>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="js/product-data.js"></script>  
+
+    <script src="js/script.js"></script>         
+
+    <script src="js/home.js"></script>           
+
+</body>
+
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Toy Haven | Feedback &amp; Support</title>
+
+    <meta name="description" content="Contact Toy Haven, send us your feedback and find answers to common questions about orders, delivery and returns.">
+
+    <meta name="theme-color" content="#eee6ff">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/support.css">
+
+    <link rel="icon" href="images/logo.png">
+
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="apple-touch-icon" href="images/icons/icon-192.png">
+
+</head>
+
+
+<body>
+
+    <header class="header">
+
+        <div class="header-container">
+
+            <a href="index.html" class="logo">
+
+                <img src="images/logo.png" alt="Toy Haven Logo">
+
+            </a>
+
+
+            <nav class="navigation" id="navigation">
+
+                <a href="index.html">Home</a>
+
+                <a href="products.html">Products</a>
+
+                <a href="cart.html">
+                    Cart
+                    <span id="cartCount">0</span>
+                </a>
+
+                <a href="wishlist.html">Wishlist</a>
+
+                <a href="support.html" class="active">Support</a>
+
+            </nav>
+
+
+            <button class="menu-button" id="menuButton" type="button" aria-label="Open menu">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="page-banner">
+
+            <p class="small-title">WE'RE HERE TO HELP</p>
+
+            <h1>Feedback &amp; Support</h1>
+
+            <p>Have a question or an idea? Send us a message or check the answers below.</p>
+
+        </section>
+
+        <section class="contact-cards">
+
+            <h2 class="hidden-label">Ways to contact us</h2>
+
+            <div class="contact-card">
+                <p class="contact-icon">📧</p>
+                <h3>Email Us</h3>
+                <p>hello@toyhaven.com</p>
+            </div>
+
+            <div class="contact-card">
+                <p class="contact-icon">📞</p>
+                <h3>Call Us</h3>
+                <p>+94 71 234 5678</p>
+            </div>
+
+            <div class="contact-card">
+                <p class="contact-icon">⏰</p>
+                <h3>Opening Hours</h3>
+                <p>Mon – Sat, 9 am – 6 pm</p>
+            </div>
+
+        </section>
+
+
+        <section class="feedback-section">
+
+            <div class="section-heading">
+
+                <p>SEND US A MESSAGE</p>
+
+                <h2>Share Your Feedback</h2>
+
+                <span>We read every message and reply within 1–2 working days.</span>
+
+            </div>
+
+            <form class="feedback-form" id="feedbackForm" novalidate>
+
+                <div class="form-group">
+
+                    <label for="feedbackName">Full Name *</label>
+
+                    <input type="text" id="feedbackName" placeholder="e.g. Nimal Perera" autocomplete="name">
+
+                    <p class="error-message" id="nameError"></p>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="feedbackEmail">Email Address *</label>
+
+                    <input type="email" id="feedbackEmail" placeholder="e.g. nimal@gmail.com" autocomplete="email">
+
+                    <p class="error-message" id="emailError"></p>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="feedbackTopic">Topic</label>
+
+                    <select id="feedbackTopic">
+                        <option value="General Feedback">General Feedback</option>
+                        <option value="Order Question">Order Question</option>
+                        <option value="Delivery">Delivery</option>
+                        <option value="Returns">Returns</option>
+                        <option value="Product Request">Product Request</option>
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="feedbackMessage">Message *</label>
+
+                    <textarea id="feedbackMessage" rows="6" maxlength="500"
+                              placeholder="Write your message here (at least 10 characters)"></textarea>
+
+                    <p class="character-count" id="characterCount">0 / 500</p>
+
+                    <p class="error-message" id="messageError"></p>
+
+                </div>
+
+
+                <button type="submit" class="shop-button send-button">Send Message</button>
+
+            </form>
+
+            <div class="thank-you" id="thankYou">
+
+                <p class="tick">✔</p>
+
+                <h3>Thank you, <span id="thankName">friend</span>!</h3>
+
+                <p>Your message has been received. We'll get back to you soon.</p>
+
+                <button type="button" class="shop-button" id="sendAnother">Send Another Message</button>
+
+            </div>
+
+        </section>
+
+
+        <section class="faq-section" id="faq">
+
+            <div class="section-heading">
+
+                <p>QUICK ANSWERS</p>
+
+                <h2>Frequently Asked Questions</h2>
+
+                <span>Click a question to see the answer.</span>
+
+            </div>
+
+
+            <div class="faq-list">
+
+                <div class="faq-item">
+                    <button type="button" class="faq-question" aria-expanded="false">
+                        How long does delivery take?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We deliver island-wide within 2–4 working days. Orders in Colombo usually arrive in 1–2 days.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button type="button" class="faq-question" aria-expanded="false">
+                        What payment methods can I use?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You can pay by credit or debit card, or choose Cash on Delivery at checkout.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button type="button" class="faq-question" aria-expanded="false">
+                        Can I return a toy?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. Unused toys in their original box can be returned within 14 days for a full refund.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button type="button" class="faq-question" aria-expanded="false">
+                        Are your toys safe for young children?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Every toy is quality checked and labelled with a recommended age. Please check the age before buying for small children.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button type="button" class="faq-question" aria-expanded="false">
+                        How does the wishlist work?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Tap the heart on any product to save it. On the Wishlist page you can mark each toy as Interested, Owned or Not Interested.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button type="button" class="faq-question" aria-expanded="false">
+                        Can I change or cancel my order?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Contact us within 12 hours of placing your order and we'll be happy to change or cancel it.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="newsletter">
+
+            <p class="small-title">STAY UPDATED</p>
+
+            <h2>Join Our Toy Haven Community</h2>
+
+            <p>Subscribe to receive updates about new toys, collections and special offers.</p>
+
+
+            <form id="newsletterForm" novalidate>
+
+                <label for="newsletterEmail" class="hidden-label">Email address</label>
+
+                <input type="email"
+                       id="newsletterEmail"
+                       placeholder="Enter your email address">
+
+                <button type="submit">Subscribe</button>
+
+            </form>
+
+
+            <p id="newsletterMessage"></p>
+
+        </div>
+
+
+        <div class="footer-content">
+
+            <div class="footer-section">
+
+                <div class="footer logo">
+                    <img src="images/logo.png" alt="Toy Haven Logo">
+                </div>
+
+                <p>Your playful destination for toys, collectibles and games.</p>
+
+            </div>
+
+
+            <div class="footer-section">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+
+                <a href="products.html">Products</a>
+
+                <a href="cart.html">Cart</a>
+
+                <a href="wishlist.html">Wishlist</a>
+
+                <a href="support.html">Support</a>
+
+            </div>
+
+
+            <div class="footer-section">
+
+                <h3>Contact Us</h3>
+
+                <p>Email: hello@toyhaven.com</p>
+
+                <p>Phone: +94 71 234 5678</p>
+
+                <p>Colombo, Sri Lanka</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>&copy; 2026 Toy Haven. All rights reserved.</p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/product-data.js"></script>   
+
+    <script src="js/script.js"></script>         
+
+    <script src="js/support.js"></script>       
+
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Toy Haven | Checkout</title>
+
+    <meta name="description" content="Complete your Toy Haven order. Enter your delivery details, choose card or cash on delivery and confirm your order.">
+
+    <meta name="theme-color" content="#eee6ff">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/checkout.css">
+
+    <link rel="icon" href="images/logo.png">
+
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="apple-touch-icon" href="images/icons/icon-192.png">
+
+</head>
+
+
+<body>
+
+    <header class="header">
+
+        <div class="header-container">
+
+            <a href="index.html" class="logo">
+
+                <img src="images/logo.png" alt="Toy Haven Logo">
+
+            </a>
+
+
+            <nav class="navigation" id="navigation">
+
+                <a href="index.html">Home</a>
+
+                <a href="products.html">Products</a>
+
+                <a href="cart.html">
+                    Cart
+                    <span id="cartCount">0</span>
+                </a>
+
+                <a href="wishlist.html">Wishlist</a>
+
+                <a href="support.html">Support</a>
+
+            </nav>
+
+
+            <button class="menu-button" id="menuButton" type="button" aria-label="Open menu">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="page-banner">
+
+            <p class="small-title">ALMOST THERE</p>
+
+            <h1>Checkout</h1>
+
+            <p>Enter your details, check your order and place it.</p>
+
+        </section>
+
+
+
+        <section class="checkout-section">
+
+            <h2 class="hidden-label">Checkout</h2>
+
+            <div class="checkout-empty" id="checkoutEmpty">
+
+                <p class="big-icon">🛒</p>
+
+                <h3>Your cart is empty</h3>
+
+                <p>Add some toys to your cart before checking out.</p>
+
+                <a href="products.html" class="shop-button">Start Shopping</a>
+
+            </div>
+
+            <div class="checkout-layout" id="checkoutLayout">
+
+                <form class="checkout-form" id="checkoutForm" novalidate>
+
+                    <h3>1. Delivery Details</h3>
+
+
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" placeholder="e.g. Nimal Perera" autocomplete="name">
+                        <p class="error-message" id="fullNameError"></p>
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" placeholder="e.g. nimal@gmail.com" autocomplete="email">
+                            <p class="error-message" id="emailError"></p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" placeholder="e.g. 0712345678" autocomplete="tel">
+                            <p class="error-message" id="phoneError"></p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="address">Delivery Address *</label>
+                        <textarea id="address" rows="3" placeholder="House number, street, city" autocomplete="street-address"></textarea>
+                        <p class="error-message" id="addressError"></p>
+                    </div>
+
+
+
+                    <h3>2. Payment Method</h3>
+
+                    <div class="payment-options">
+
+                        <label class="payment-option selected">
+                            <input type="radio" name="payment" value="Card" checked>
+                            <span>💳 Credit / Debit Card</span>
+                        </label>
+
+                        <label class="payment-option">
+                            <input type="radio" name="payment" value="Cash on Delivery">
+                            <span>💵 Cash on Delivery</span>
+                        </label>
+
+                    </div>
+
+
+                    <div class="card-details" id="cardDetails">
+
+                        <p class="demo-note">This is a demo shop. Please do not enter a real card number.</p>
+
+                        <div class="form-group">
+                            <label for="cardNumber">Card Number *</label>
+                            <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19" inputmode="numeric" autocomplete="off">
+                            <p class="error-message" id="cardNumberError"></p>
+                        </div>
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label for="expiry">Expiry (MM/YY) *</label>
+                                <input type="text" id="expiry" placeholder="08/28" maxlength="5" autocomplete="off">
+                                <p class="error-message" id="expiryError"></p>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="cvv">CVV *</label>
+                                <input type="password" id="cvv" placeholder="123" maxlength="3" inputmode="numeric" autocomplete="off">
+                                <p class="error-message" id="cvvError"></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <button type="submit" class="shop-button review-button">Review My Order</button>
+
+                </form>
+
+                <aside class="order-summary">
+
+                    <h3>Your Order</h3>
+
+                    <ul class="summary-items" id="summaryItems"></ul>
+
+                    <div class="summary-line">
+                        <span>Subtotal</span>
+                        <span id="subtotalAmount">Rs. 0</span>
+                    </div>
+
+                    <div class="summary-line">
+                        <span>Delivery</span>
+                        <span id="deliveryAmount">Rs. 0</span>
+                    </div>
+
+                    <div class="summary-line summary-final">
+                        <span>Total</span>
+                        <span id="totalAmount">Rs. 0</span>
+                    </div>
+
+                    <p class="delivery-note">🚚 Free delivery on orders over Rs. 5,000</p>
+
+                    <a href="cart.html" class="back-link">← Back to Cart</a>
+
+                </aside>
+
+            </div>
+
+            <div class="order-success" id="orderSuccess">
+
+                <div
