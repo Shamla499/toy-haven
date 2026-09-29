@@ -319,8 +319,6 @@ function changeHeroBanner() {
         heroIndex = 0;
     }
 
-
-    // 1. fade out
     heroImage.classList.add("fade");
     heroContent.classList.add("fade");
 

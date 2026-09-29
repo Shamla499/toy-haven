@@ -11,14 +11,14 @@ const products = [
         featured: true
     },
 
-    {
+     {
         id: 2,
-        name: "Building Blocks",
+        name: "Building Blocks-1.png",
         category: "toys",
         categoryName: "Toys",
         price: 1800,
-        image: "images/building blocks-1.png",
-        imagesize:100,
+        image: "images/building-blocks-1.png",
+        imageSize: 100,
         description: "Create exciting designs and have fun building something new.",
         featured: true
     },
@@ -30,7 +30,7 @@ const products = [
         categoryName: "Board Games",
         price: 2200,
         image: "images/boardgames-1.png",
-        imagesize: 100,
+        imageSize: 100,
         description: "Enjoy an exciting game night with family and friends.",
         featured: true
     },
@@ -42,7 +42,7 @@ const products = [
         categoryName: "Diecast Cars",
         price: 3000,
         image: "images/car-1.png",
-        imagesize: 90,
+        imageSize: 90,
         description: "Add a detailed diecast model car to your collection.",
         featured: true
     },
@@ -54,6 +54,7 @@ const products = [
         categoryName: "Figurines",
         price: 4500,
         image: "images/Samurai Fox Figure.png",
+        imageSize: 100,
         description: "A detailed collector figure with a display base.",
         featured: false
     },
@@ -65,6 +66,7 @@ const products = [
         categoryName: "Toys",
         price: 1500,
         image: "images/Toy-2.png",
+        imageSize: 100,
         description: "An extra-soft teddy bear with a cute bow.",
         featured: false
     },
@@ -76,6 +78,7 @@ const products = [
         categoryName: "Board Games",
         price: 2800,
         image: "images/boardgame-2.jpg",
+        imageSize: 100,
         description: "Buy, trade, and build your property empire!",
         featured: false
     },
@@ -131,10 +134,11 @@ const products = [
     categoryName: "Board Games",
     price: 2500,
     image: "images/boardgames-3.png",
+    imageSize: 100,
     description: "A classic chess set with a stylish board and detailed playing pieces.",
     featured: false
 },
 
 
 
-];
+]
